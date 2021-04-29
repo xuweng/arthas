@@ -1,0 +1,32 @@
+version: 2
+updates:
+- package-ecosystem: maven
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: io.netty:netty-transport
+    versions:
+    - 4.1.58.Final
+    - 4.1.59.Final
+    - 4.1.60.Final
+    - 4.1.62.Final
+  - dependency-name: io.netty:netty-buffer
+    versions:
+    - 4.1.58.Final
+    - 4.1.59.Final
+    - 4.1.60.Final
+    - 4.1.62.Final
+  - dependency-name: io.netty:netty-codec-http
+    versions:
+    - 4.1.58.Final
+  - dependency-name: org.ow2.asm:asm-commons
+    versions:
+    - "9.0"
+  - dependency-name: org.benf:cfr
+    versions:
+    - "0.150"
+  - dependency-name: io.netty:netty-handler
+    versions:
+    - 4.1.45.Final
